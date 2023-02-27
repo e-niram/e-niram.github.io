@@ -1,0 +1,34 @@
+h1,
+h2,
+p {
+  font-family: sans-serif, Helvetica, arial;
+  color: #ffffff;
+}
+
+.flexHorizontalContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flexVerticalContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.textPrimary {
+  color: rgba(255, 255, 255, 0.87); 
+}
+
+.textSecondary {
+  color: rgba(255, 255, 255, 0.60); 
+  font-family: sans-serif, Helvetica, arial;
+}
+
+.textDisabled {
+  color: rgba(255, 255, 255, 0.38); 
+}

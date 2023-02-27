@@ -1,0 +1,33 @@
+ul {
+  list-style-type: none;
+  margin-bottom: 13%;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+  font-family: Lato;
+  color: #ffffff;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-family: sans-serif, Helvetica, arial;
+  color: rgba(255, 255, 255, 0.87); 
+}
