@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 import './Header.css';
 
 export default function Header() {
@@ -15,16 +16,16 @@ export default function Header() {
           </a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link to={`/contact`}>Contact</Link>
         </li>
         <li>
-          <a href="#">Work</a>
+          <Link to={`/projects`}>Projects</Link>
         </li>
         <li>
-          <a href="#">Experience</a>
+          <Link to={`/experience`}>Experience</Link>
         </li>
         <li>
-          <a href="#">About</a>
+        <Link to={`/about`}>About</Link>
         </li>
       </ul>
     </div>
