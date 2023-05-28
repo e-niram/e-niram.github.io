@@ -1,0 +1,43 @@
+.contactContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.mailContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5%;
+}
+
+.fastLaneContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10%;
+}
+
+.textSecondary {
+	color: rgba(255, 255, 255, 0.87);
+	font-family: sans-serif, Helvetica, arial;
+	font-size: xx-large;
+}
+
+.textPrimary {
+	color: rgba(255, 255, 255, 0.6);
+	font-family: sans-serif, Helvetica, arial;
+	font-size: xxx-large;
+}
+
+.icon {
+	color: white;
+	height: 100px !important;
+	width: 100px !important;
+}
