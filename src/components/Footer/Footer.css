@@ -1,0 +1,15 @@
+.footerContainer {
+	display: flex;
+	justify-content: center;
+	gap: 5%;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding-bottom: 10px;
+}
+
+.footerIcon {
+	color: white;
+	height: 30px !important;
+	width: 30px !important;
+}

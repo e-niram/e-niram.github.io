@@ -1,6 +1,7 @@
 import * as React from "react";
 import MailIcon from "@mui/icons-material/Mail";
 import FastForwardIcon from "@mui/icons-material/FastForward";
+import Footer from "../Footer/Footer";
 import "./Contact.css";
 
 export default function Contact() {
@@ -17,6 +18,7 @@ export default function Contact() {
 				<p className="textSecondary">Or take the fast-lane</p>
 				<FastForwardIcon className="icon" />
 			</div>
+			<Footer />
 		</div>
 	);
 }
