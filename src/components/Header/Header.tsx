@@ -20,9 +20,6 @@ export default function Header() {
 					<Link to={`/contact`}>Contact</Link>
 				</li>
 				<li>
-					<Link to={`/projects`}>Projects</Link>
-				</li>
-				<li>
 					<Link to={`/experience`}>Experience</Link>
 				</li>
 				<li>
