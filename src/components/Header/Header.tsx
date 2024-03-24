@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import "../../pages/Contact/Contact";
+import { Typography } from "../Typography/Typography";
 
 export default function Header() {
 	const handleCVonClick = () => {
@@ -13,17 +14,23 @@ export default function Header() {
 			<ul>
 				<li>
 					<a onClick={handleCVonClick} href="">
-						CV
+						<Typography color="text">CV</Typography>
 					</a>
 				</li>
 				<li>
-					<Link to={`/contact`}>Contact</Link>
+					<Link to={`/contact`}>
+						<Typography color="text">Contact</Typography>
+					</Link>
 				</li>
 				<li>
-					<Link to={`/experience`}>Experience</Link>
+					<Link to={`/experience`}>
+						<Typography color="text">Experience</Typography>
+					</Link>
 				</li>
 				<li>
-					<Link to={`/about`}>About</Link>
+					<Link to={`/about`}>
+						<Typography color="text">About</Typography>
+					</Link>
 				</li>
 			</ul>
 		</div>
