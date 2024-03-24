@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { About } from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 
 const root = ReactDOM.createRoot(
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "/about",
-		element: <p>About</p>,
+		element: <About />,
 	},
 ]);
 
