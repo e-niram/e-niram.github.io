@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It was linked to Github Pages by using [this guide](https://github.com/gitname/react-gh-pages).
 
+Please check the UI Designs in [Figma](https://www.figma.com/file/qvWKuX2zNDlMCd4K9yVgYY/Personal-WebPage?type=design&node-id=3%3A7&mode=design&t=h3StYAWrsn7JLcha-1).
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -32,4 +34,3 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### Adding your changes to the build folder
 
 `npm run deploy -- -m "Deploy React app to GitHub Pages"`
-
