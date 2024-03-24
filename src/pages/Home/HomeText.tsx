@@ -1,6 +1,7 @@
 import * as React from "react";
-import Footer from "./components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import "./HomeText.css";
+import { Typography } from "../../components/Typography/Typography";
 
 export default function HomeText() {
 	return (

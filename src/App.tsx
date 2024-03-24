@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header";
-import HomeText from "./HomeText";
+import HomeText from "./pages/Home/HomeText";
 
 function App() {
 	return (
