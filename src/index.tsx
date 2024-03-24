@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Contact from "./components/Contact/Contact";
+import Contact from "./pages/Contact/Contact";
 
 const root = ReactDOM.createRoot(
 	document.getElementById("root") as HTMLElement

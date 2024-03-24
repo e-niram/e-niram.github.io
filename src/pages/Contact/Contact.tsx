@@ -1,7 +1,7 @@
 import * as React from "react";
 import MailIcon from "@mui/icons-material/Mail";
 import FastForwardIcon from "@mui/icons-material/FastForward";
-import Footer from "../Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import "./Contact.css";
 
 export default function Contact() {
