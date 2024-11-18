@@ -2,7 +2,7 @@ import * as React from "react";
 import Footer from "../../components/Footer/Footer";
 import "./Home.css";
 import { Typography } from "../../components/Typography/Typography";
-import Button from "@mui/material/Button/Button";
+import { Button } from "../../components/Button/Button";
 
 export default function Home() {
 	return (
@@ -11,7 +11,11 @@ export default function Home() {
 				<Typography color="secondary" size="xxx-large" weight="extra-bold">
 					Esteban Marín
 				</Typography>
-				<Button>Let's work</Button>
+				<Button color="primary">
+					<Typography color="light" size="large" weight="extra-bold">
+						Let's work
+					</Typography>
+				</Button>
 			</div>
 			<div className="anotherFlexVerticalContainer">
 				<Typography color="secondary" size="xx-large" weight="extra-bold">

@@ -1,12 +1,8 @@
-* {
-	background-color: #fbf8ef;
-	text-align: "center";
-}
-
 .flexHorizontalContainer {
+	background-color: #fbf8ef;
 	display: flex;
-	height: 40vh;
-	gap: 225px;
+	height: 50vh;
+	gap: 100px;
 	justify-content: center;
 	align-items: center;
 }
