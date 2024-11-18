@@ -3,12 +3,12 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header/Header";
 import HomeText from "./pages/Home/HomeText";
+import Home from "./pages/Home-v2/Home";
 
 function App() {
 	return (
 		<div>
-			<Header />
-			<HomeText />
+			<Home />
 		</div>
 	);
 }

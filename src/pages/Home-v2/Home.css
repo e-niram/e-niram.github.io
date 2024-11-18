@@ -1,0 +1,45 @@
+* {
+	background-color: #fbf8ef;
+	text-align: "center";
+}
+
+.flexHorizontalContainer {
+	display: flex;
+	height: 40vh;
+	gap: 225px;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexVerticalContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 500px;
+}
+
+.anotherFlexVerticalContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+	text-align: center;
+	width: 500px;
+}
+
+.textPrimary {
+	color: #f96e2a;
+}
+
+.textSecondary {
+	color: #78b3ce;
+	font-family: sans-serif, Helvetica, arial;
+}
+
+.textDisabled {
+	color: #c9e6f0;
+}
+
+.caption {
+	color: #c9e6f0;
+}
