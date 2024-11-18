@@ -8,12 +8,16 @@ export default function Home() {
 	return (
 		<div className="flexHorizontalContainer">
 			<div className="flexVerticalContainer">
-				<Typography color="secondary">Esteban Marín</Typography>
+				<Typography color="secondary" size="xxx-large" weight="extra-bold">
+					Esteban Marín
+				</Typography>
 				<Button>Let's work</Button>
 			</div>
 			<div className="anotherFlexVerticalContainer">
-				<Typography color="secondary">I like to solve problems</Typography>
-				<Typography color="secondary">
+				<Typography color="secondary" size="xx-large" weight="extra-bold">
+					I like to solve problems
+				</Typography>
+				<Typography color="secondary" size="x-large" weight="medium">
 					Computer Science, Software Engineering, Competitive Programming, Chess
 				</Typography>
 			</div>
