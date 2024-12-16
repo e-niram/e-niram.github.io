@@ -207,6 +207,11 @@ footer {
 		margin-bottom: 30px;
 		font-weight: 500;
 	}
+
+	.button {
+		font-size: 16px;
+		padding: 10px 10px;
+	}
 }
 
 /* Smartphones */
@@ -225,11 +230,6 @@ footer {
 
 	.home > .container > .column > .content > p {
 		font-size: 20px;
-	}
-
-	.button {
-		font-size: 12px;
-		padding: 10px 10px;
 	}
 
 	.home > .container > .column {
