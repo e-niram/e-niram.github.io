@@ -197,6 +197,18 @@ footer {
 	}
 }
 
+/* Smartphones - iPhones */
+@media screen and (max-width: 950px) {
+	.row {
+		margin-bottom: 10px;
+	}
+
+	.job-description {
+		margin-bottom: 30px;
+		font-weight: 500;
+	}
+}
+
 /* Smartphones */
 @media screen and (max-width: 480px) {
 	.home > .container {
