@@ -33,8 +33,8 @@
 	width: 100%;
 }
 
-.home > .container > .column > .content > h3 {
-	color: #78b3ce;
+.home > .container > .column > .content > h2 {
+	color: #47788e;
 	font-weight: 800;
 	font-size: 45px;
 }
@@ -45,7 +45,7 @@
 }
 
 .home > .container > .column > .content > p {
-	color: #78b3ce;
+	color: #47788e;
 	font-size: 25px;
 	margin-bottom: 50px;
 	margin-top: 40px;
@@ -79,7 +79,7 @@
 }
 
 .link {
-	color: #78b3ce;
+	color: #47788e;
 	font-weight: 700;
 }
 
@@ -123,14 +123,14 @@
 .year {
 	text-align: center;
 	font-size: 100px;
-	color: #78b3ce;
+	color: #47788e;
 	font-weight: 800;
 }
 
 .double-year {
 	text-align: center;
 	font-size: 85px;
-	color: #78b3ce;
+	color: #47788e;
 	font-weight: 800;
 }
 
@@ -145,7 +145,7 @@
 .job-description {
 	font-size: 20px;
 	text-align: center;
-	color: #78b3ce;
+	color: #47788e;
 }
 
 .responsive-year-top {
