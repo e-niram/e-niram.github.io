@@ -199,6 +199,10 @@ footer {
 
 /* Smartphones - iPhones */
 @media screen and (max-width: 950px) {
+	.home > .container > .column {
+		padding: 30px;
+	}
+
 	.row {
 		margin-bottom: 10px;
 	}
@@ -218,6 +222,11 @@ footer {
 @media screen and (max-width: 480px) {
 	.home > .container {
 		flex-direction: column;
+		padding-bottom: 20px;
+	}
+
+	.home > .container > .column {
+		padding: 30px;
 	}
 
 	.home > .container > .column > .content > h1 {
