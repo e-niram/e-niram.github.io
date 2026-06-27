@@ -1,0 +1,91 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  pubDate?: string;
+}
+
+const { title, description, pubDate } = Astro.props;
+---
+
+<BaseLayout title={`${title} — Esteban Marín`} description={description}>
+  <main class="blog-post-main">
+    <article class="blog-post">
+      <header class="blog-post-header">
+        <h1>{title}</h1>
+        {pubDate && <p class="blog-post-date">{pubDate}</p>}
+      </header>
+      <section class="blog-post-content">
+        <slot />
+      </section>
+    </article>
+    <nav class="blog-post-nav" aria-label="Post navigation">
+      <a href="/blog" class="button-secondary" style="text-decoration:none;">← Back to Blog</a>
+      <a href="/" class="button-secondary" style="text-decoration:none;">Back to Home</a>
+    </nav>
+  </main>
+</BaseLayout>
+
+<style>
+  .blog-post-main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px 20px 80px;
+  }
+
+  .blog-post-header {
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 24px;
+  }
+
+  .blog-post-header h1 {
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--color-accent);
+    line-height: 1.2;
+  }
+
+  .blog-post-date {
+    font-size: 14px;
+    color: var(--color-text);
+    opacity: 0.7;
+    margin-top: 10px;
+  }
+
+  .blog-post-content {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--color-text);
+  }
+
+  .blog-post-content :global(h2) {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin: 48px 0 16px;
+  }
+
+  .blog-post-content :global(p) {
+    margin-bottom: 20px;
+  }
+
+  .blog-post-content :global(ul),
+  .blog-post-content :global(ol) {
+    padding-left: 24px;
+    margin-bottom: 20px;
+  }
+
+  .blog-post-content :global(li) {
+    margin-bottom: 8px;
+  }
+
+  .blog-post-nav {
+    display: flex;
+    gap: 16px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  }
+</style>
