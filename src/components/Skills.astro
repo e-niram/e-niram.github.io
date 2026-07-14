@@ -1,0 +1,39 @@
+---
+const skillGroups = [
+  {
+    title: 'Languages',
+    skills: ['Python', 'R', 'SQL', 'C#', 'TypeScript', 'SAS'],
+  },
+  {
+    title: 'Cloud & Infrastructure',
+    skills: ['Azure Cosmos DB', 'Azure Cloud', 'Distributed Systems'],
+  },
+  {
+    title: 'Data Science',
+    skills: ['Statistical Modeling', 'Spatial Analysis', 'Machine Learning', 'LaTeX'],
+  },
+  {
+    title: 'Other',
+    skills: ['Unity', 'Competitive Programming', 'Scrum / Agile'],
+  },
+];
+---
+
+<!-- ── Skills ─────────────────────────────────────────── -->
+<section class="skills" id="skills">
+  <h2 class="section-heading">Skills</h2>
+  <div class="skills-content">
+    {
+      skillGroups.map((group) => (
+        <div class="skill-group">
+          <h3>{group.title}</h3>
+          <div class="skill-tags">
+            {group.skills.map((skill) => (
+              <span>{skill}</span>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>
