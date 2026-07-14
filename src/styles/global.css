@@ -366,6 +366,7 @@ html {
 }
 
 .project-card {
+	position: relative;
 	background: var(--color-bg);
 	border-radius: 12px;
 	padding: 30px;
@@ -373,11 +374,8 @@ html {
 }
 
 .project-header {
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
-	gap: 12px;
 	margin-bottom: 14px;
+	padding-right: 60px;
 }
 
 .project-header h3 {
@@ -388,6 +386,9 @@ html {
 }
 
 .project-tag {
+	position: absolute;
+	top: 30px;
+	right: 30px;
 	background: var(--color-accent);
 	color: white;
 	border-radius: 20px;
@@ -395,7 +396,6 @@ html {
 	font-size: 12px;
 	font-weight: 700;
 	white-space: nowrap;
-	flex-shrink: 0;
 }
 
 .project-card p {
