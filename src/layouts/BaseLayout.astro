@@ -46,7 +46,9 @@ const {
       </div>
     </nav>
 
-    <slot />
+    <div class="page-content">
+      <slot />
+    </div>
 
     <footer>
       <div class="links">
@@ -68,9 +70,6 @@ const {
           aria-label="Email Contact"
           ><i class="fa fa-envelope" aria-hidden="true"></i></a
         >
-      </div>
-      <div style="padding-bottom: 30px;">
-        <a href="/blog" class="button" aria-label="Navigate to Blog">Blog</a>
       </div>
     </footer>
   </body>
