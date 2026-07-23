@@ -1,20 +1,40 @@
 ---
 const skillGroups = [
   {
-    title: 'Languages',
-    skills: ['Python', 'R', 'SQL', 'C#', 'TypeScript', 'SAS'],
+    title: 'Frontend',
+    skills: ['React', 'Next.js', 'Astro', 'Storybook', 'Figma'],
   },
   {
-    title: 'Cloud & Infrastructure',
-    skills: ['Azure Cosmos DB', 'Azure Cloud', 'Distributed Systems'],
+    title: 'Backend',
+    skills: ['Django', 'Spring', 'Node.js', 'FastAPI'],
+  },
+  {
+    title: 'Databases',
+    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Supabase'],
+  },
+  {
+    title: 'Programming Languages',
+    skills: ['Python', 'C++', 'Java', 'TypeScript', 'SQL'],
   },
   {
     title: 'Data Science',
-    skills: ['Statistical Modeling', 'Spatial Analysis', 'Machine Learning', 'LaTeX'],
+    skills: ['R', 'SAS', 'Machine Learning', 'Time Series Modeling'],
   },
   {
-    title: 'Other',
-    skills: ['Unity', 'Competitive Programming', 'Scrum / Agile'],
+    title: 'DevOps',
+    skills: ['Jenkins', 'Terraform', 'Docker', 'Kubernetes', 'Grafana', 'Datadog'],
+  },
+  {
+    title: 'Cloud',
+    subgroups: [
+      { provider: 'AWS', skills: ['S3', 'EC2'] },
+      { provider: 'Azure', skills: ['Cosmos DB'] },
+      { provider: 'GCP', skills: ['Vertex AI'] },
+    ],
+  },
+  {
+    title: 'Natural Languages',
+    skills: ['Spanish (Native)', 'English (C1)', 'French (B2)'],
   },
 ];
 ---
@@ -27,11 +47,26 @@ const skillGroups = [
       skillGroups.map((group) => (
         <div class="skill-group">
           <h3>{group.title}</h3>
-          <div class="skill-tags">
-            {group.skills.map((skill) => (
-              <span>{skill}</span>
-            ))}
-          </div>
+          {group.subgroups ? (
+            <div class="skill-subgroups">
+              {group.subgroups.map((subgroup) => (
+                <div class="skill-subgroup">
+                  <span class="skill-provider">{subgroup.provider}</span>
+                  <div class="skill-tags">
+                    {subgroup.skills.map((skill) => (
+                      <span>{skill}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div class="skill-tags">
+              {group.skills.map((skill) => (
+                <span>{skill}</span>
+              ))}
+            </div>
+          )}
         </div>
       ))
     }
